@@ -1,7 +1,3 @@
-# A2SV Project Phase Git Workflow Guide
-
-Welcome to the Git Usage Guideline for A2SV Projects. This comprehensive document will provide you with a clear and effective workflow for using Git within A2SV projects. By following these guidelines, you'll be able to collaborate seamlessly, manage version control, and contribute effectively to the project.
-
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -21,7 +17,7 @@ Welcome to the Git Usage Guideline for A2SV Projects. This comprehensive documen
 
 # Introduction
 
-This document serves as a comprehensive guide for using Git effectively within the A2SV projects. It aims to establish a consistent Git workflow, covering topics such as branching, making changes, committing, pushing, and creating pull requests. By adhering to these guidelines, you'll ensure that the codebase remains organized, maintainable, and scalable.
+This document aims to establish a consistent Git workflow, covering topics such as branching, making changes, committing, pushing, and creating pull requests. By adhering to these guidelines, you'll ensure that the codebase remains organized, maintainable, and scalable.
 
 ## Version Control with Git and GitHub(Part One)
 
@@ -114,7 +110,7 @@ This section should give a comprehensive overview of version control using Git a
 
 1. Clone the repository to your local machine:
    ```
-   git clone https://github.com/bontu-fufa/git-tutorial.git
+   git clone https://github.com/Sophinaz/git-tutorial.git
    ```
 
 #### Commands:
@@ -184,7 +180,7 @@ This section should give a comprehensive overview of version control using Git a
 
 1. Clone the repository to your local machine:
    ```
-   git clone https://github.com/bontu-fufa/git-tutorial-2.git
+   git clone https://github.com/Sophinaz/git-tutorial.git
    ```
 2. Configure Git to rebase when pulling changes:
    ```
@@ -291,7 +287,7 @@ A **Pull Request** (PR) is a way to ask another developer to merge one of your b
 
 #### General Guidelines
 
-- The PR title should follow the commit convention, e.g., `fix(AAiT-backend-1A): Update Login Page`.
+- The PR title should follow the commit convention, e.g., `fix: Update Login Page`.
 - Ensure your branch is up to date with the main branch.
 - Changes should be fully tested and pass all tests.
 - Commit messages should be meaningful and follow the commit guidelines.
@@ -299,7 +295,7 @@ A **Pull Request** (PR) is a way to ask another developer to merge one of your b
 #### Committing
 
 - Use simple present tense. Example: "Update Login Page".
-- Add a tag (refer to “conventional commit rules”). Example: `fix(mobile): Update Login Page`.
+- Add a tag (refer to “conventional commit rules”). Example: `fix: Update Login Page`.
 
 #### Creating a Branch
 
@@ -355,7 +351,6 @@ A **Pull Request** (PR) is a way to ask another developer to merge one of your b
 
 ### Practice Exercises
 
-- Practice PR: [GitHub Practice PR](https://github.com/bontu-fufa/code-review-practice/pull/1)
 
 1. **Take a Broad View of the Change**:
    - Review the PR description and overall purpose.
@@ -409,71 +404,5 @@ Refer to the Git FAQs section for answers to common Git-related questions.
 
 ## Conclusion
 
-Congratulations! You have completed the Git Workflow Guide for A2SV Projects. By following these best practices, you contribute to a well-organized, maintainable, and scalable codebase. If you encounter any questions or issues, don't hesitate to reach out to your team leader for assistance. Happy coding!
+Congratulations! You have completed the Git Workflow Guide. By following these best practices, you contribute to a well-organized, maintainable, and scalable codebase. If you encounter any questions or issues, don't hesitate to reach out to your team leader for assistance. Happy coding!
 
-## Updated Exercise
-
-### Practice Pull Request
-
-1. **Fork the Repository**:
-   - One student in each group of three will fork the repository.
-   - Navigate to the repository on GitHub and click the "Fork" button in the top right corner.
-   
-2. **Invite Teammates to Collaborate**:
-   - The student who forked the repository will invite their teammates to collaborate.
-   - Go to the forked repository on GitHub.
-   - Click on "Settings" > "Collaborators & teams" > "Invite a collaborator".
-   - Add the GitHub usernames of the teammates and send invitations.
-
-3. **Clone the Forked Repository**:
-   - Each teammate will clone the forked repository.
-   ```bash
-   git clone https://github.com/<your-username>/<forked-repo>.git
-   ```
-   - Navigate into the cloned repository directory.
-   ```bash
-   cd <forked-repo>
-   ```
-
-4. **Ensure Your Branch is Up to Date with the Main Branch**:
-   ```bash
-   git pull --rebase origin main
-   ```
-
-5. **Create a New Branch**:
-   ```bash
-   git checkout -b <new-branch-name>
-   ```
-
-6. **Make Changes and Commit**:
-   - Make the necessary changes in your local repository.
-   - Stage the changes.
-   ```bash
-   git add .
-   ```
-   - Commit the changes with a meaningful message.
-   ```bash
-   git commit -m "Add meaningful commit message"
-   ```
-
-7. **Push the Branch to GitHub**:
-   ```bash
-   git push origin <new-branch-name>
-   ```
-
-8. **Create a Pull Request on GitHub**:
-   - Navigate to the forked repository on GitHub.
-   - Click the "New pull request" button.
-   - Select the branch you want to merge into the main branch.
-   - Add reviewers and a title and description for your pull request.
-   - Click "Create pull request" to submit your request.
-
-9. **Address Reviewer Comments and Make Necessary Changes**:
-   - Incorporate any feedback from reviewers and update the pull request as needed.
-
-10. **Rebase Your Branch with Changes from the Main Branch Before Merging**:
-    ```bash
-    git pull --rebase origin main
-    ```
-
-11. **Merge the Pull Request Using "Squash and Merge"** to Group Smaller Commits.
